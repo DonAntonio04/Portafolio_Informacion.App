@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Informacion } from './models/informacion';
+import { InformacionService } from './services/informacion.service'; 
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Informacion.App';
-}
+  informacion:Informacion[]=[];
+
+  constructor(private informacionService: InformacionService){ }
+  ngOnInit(): void {
+    this.informacionService.getInformacion().subscribe((result: Informacion[]) => {
+      this.informacion = result;});
+    }
+  }
+
