@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Informacion } from './models/informacion';
 import { InformacionService } from './services/informacion.service'; 
-
+import { InformacionComponent } from './Paginas/Informacion/informacion/informacion.component';
 
 @Component({
   selector: 'app-root',

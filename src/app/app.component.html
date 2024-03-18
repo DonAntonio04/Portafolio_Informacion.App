@@ -178,32 +178,40 @@
 </style>
 
 <main class="main">
-  <div class="content">
+  <div class="content flex justify-center">
     <div class="left-side">
-      <h1>Informacion</h1>
-      <table>
-        <thead>
-          <th>ID</th>
-          <th>Nombre</th>
-          <th>Edad</th>
-          <th>Teléfono</th>
-          <th>Carrera</th>
-          <th>Gmail</th>
-        </thead>
-        <tbody>
-          <tr *ngFor="let informacion of informacion">
-            <td>{{informacion.id}}</td>
-            <td>{{informacion.nombre}}</td>
-            <td>{{informacion.edad}}</td>
-            <td>{{informacion.telefono}}</td>
-            <td>{{informacion.carrera}}</td>
-            <td>{{informacion.gmail}}</td>
-          </tr>
-        </tbody>
-      </table>
+      <h1 class="text-center text-2xl font-bold mb-4">Información</h1>
+      <div class="shadow-md rounded-lg overflow-hidden">
+        <table class="min-w-full">
+          <thead class="bg-gray-200">
+            <tr>
+              <th class="px-4 py-2">ID</th>
+              <th class="px-4 py-2">Nombre</th>
+              <th class="px-4 py-2">Edad</th>
+              <th class="px-4 py-2">Teléfono</th>
+              <th class="px-4 py-2">Carrera</th>
+              <th class="px-4 py-2">Gmail</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white">
+            <tr *ngFor="let informacion of informacion" class="hover:bg-gray-100">
+              <td class="border px-4 py-2">{{ informacion.id }}</td>
+              <td class="border px-4 py-2">{{ informacion.nombre }}</td>
+              <td class="border px-4 py-2">{{ informacion.edad }}</td>
+              <td class="border px-4 py-2">{{ informacion.telefono }}</td>
+              <td class="border px-4 py-2">{{ informacion.carrera }}</td>
+              <td class="border px-4 py-2">{{ informacion.gmail }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </main>
+
+<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" routerLink="/inicio"> ir a inicio</button>
+
+
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
@@ -214,4 +222,4 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
-<router-outlet />
+ <router-outlet />

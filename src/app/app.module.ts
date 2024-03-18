@@ -4,12 +4,17 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MiComponenteComponent } from './components/mi-componente/mi-componente.component';
+//import { MiComponenteComponent } from './components/mi-componente/mi-componente.component';
+import { InformacionComponent } from './Paginas/Informacion/informacion/informacion.component';
+import { InicioComponent } from './Paginas/Inicio/inicio/inicio.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    MiComponenteComponent
+  //  MiComponenteComponent,
+    InformacionComponent,
+  InicioComponent
   ],
   imports: [
     BrowserModule,
