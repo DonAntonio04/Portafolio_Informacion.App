@@ -6,7 +6,7 @@ import { InicioComponent } from './Paginas/Inicio/inicio/inicio.component';
 import { YoComponent } from './Paginas/yo/yo.component';
 import { TecnologiasComponent } from './Paginas/tecnologias/tecnologias.component';
 import { ProyectosComponent } from './Paginas/proyectos/proyectos.component';
-
+import { ApisComponent } from './Paginas/apis/apis.component';
 
 const routes: Routes = [
   {path: '', component:InicioComponent},
@@ -14,6 +14,7 @@ const routes: Routes = [
   {path: 'yo',component:YoComponent},
  {path: 'tecnologias',component:TecnologiasComponent},
  {path: 'proyectos',component:ProyectosComponent},
+ {path:'apis',component:ApisComponent}
 ];
 
 @NgModule({

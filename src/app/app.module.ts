@@ -10,6 +10,9 @@ import { InicioComponent } from './Paginas/Inicio/inicio/inicio.component';
 import { YoComponent } from './Paginas/yo/yo.component';
 import { TecnologiasComponent } from './Paginas/tecnologias/tecnologias.component';
 import { ProyectosComponent } from './Paginas/proyectos/proyectos.component';
+import { ApisComponent } from './Paginas/apis/apis.component';
+//import { YouTubePlayerModule } from '@angular/youtube-player';
+
 
 @NgModule({
   declarations: [
@@ -20,13 +23,15 @@ import { ProyectosComponent } from './Paginas/proyectos/proyectos.component';
     YoComponent,
     TecnologiasComponent,
     ProyectosComponent,
+    ApisComponent,
    
    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+ //   YouTubePlayerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

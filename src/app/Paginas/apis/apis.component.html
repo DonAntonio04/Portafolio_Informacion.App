@@ -1,0 +1,7 @@
+
+<div *ngIf="randomJoke" class="bg-gradient-to-r from-purple-600 to-purple-800 rounded-lg p-8 shadow-md">
+  <img  alt="Chuck Norris" class="rounded-full w-24 h-24 mx-auto mb-4">
+  <p class="text-white text-lg text-center">{{ randomJoke.value }}</p>
+  <button class="bg-green-500 hover:bg-green-600 rounded-full text-lg text-white font-semibold px-4 py-2 mt-4 block mx-auto" (click)="getNewJoke()">Obtener nueva frase</button>
+</div>
+
